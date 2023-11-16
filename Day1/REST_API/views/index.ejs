@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>All post</title>
+    <style>
+        a{
+            margin-left: 40%;
+            text-align: center;
+            background-color: #b0f5f0;
+            font-size: 30px;
+            text-decoration: none;
+        }
+        .box{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            background-color: #d6d2d2;
+        }
+        .box h3,h4{
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    
+    <h1>Intern Details</h1>
+    <a href="http://localhost:8000/student/new">Register new Student</a>
+    <% for( let list of student ) { %>
+        <div class="box">
+            <h3 class="user">@ <%= list.username %></h3><br><br>
+            <h4 class="content"> <%= list.Branch  %></h4><br><br>
+        <br>
+        
+    </div>
+
+    <% } %>
+    <br><br>
+
+
+    
+    <br><br>
+</body>
+</html>
